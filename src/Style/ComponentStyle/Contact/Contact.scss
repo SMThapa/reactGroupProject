@@ -97,6 +97,7 @@ $dark-blue :#1e3372;
                 font-size: 2rem;
                 color: white;
                 font-weight: 300;
+                margin-top: 20px;
             }
             & .contact-contacts{
                 height: 68%;
@@ -190,6 +191,9 @@ $dark-blue :#1e3372;
             & .contact-info{
                 height: 30vh;
                 width: 100%;
+                & h1{
+                    margin-top: 0;
+                }
                 & .contact-contacts{
                     & .contacts{
                         margin-top: 0px;
