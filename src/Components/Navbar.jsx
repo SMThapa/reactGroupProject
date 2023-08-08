@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom"
-import '../Style/ComponentStyle/Navbar/Navbar.css'
+import '../Style/ComponentStyle/Navbar/NavBar.css'
 
 export const Navbar = () => {
 
