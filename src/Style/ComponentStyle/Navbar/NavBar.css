@@ -1,0 +1,182 @@
+.navBar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1e3372;
+  color: white;
+  padding: 0 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  box-sizing: border-box;
+}
+.navBar .navItems {
+  height: 100%;
+  width: 1440px;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: 20% 30% 20%;
+}
+.navBar .navItems .menu {
+  overflow: hidden;
+  z-index: 10;
+}
+.navBar .navItems .menu .menu-items {
+  display: flex;
+  justify-content: space-around;
+}
+.navBar .navItems .menu .menu-items .hidden-register {
+  display: none;
+}
+.navBar .navItems .register {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.navBar .navItems .register a {
+  margin: 0 8px;
+  padding: 1px 0;
+}
+.navBar .navItems .hamburger-button {
+  display: none;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+/* hamburger */
+.hamburger-button {
+  display: none;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+}
+.hamburger-button .menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  margin-right: 35%;
+}
+.hamburger-button .menu-button .line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger-button .menu-button .line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 3;
+}
+.hamburger-button .menu-button .line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 3;
+}
+.hamburger-button .menu-button .line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 3;
+}
+.hamburger-button .opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+.hamburger-button .opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 3;
+}
+.hamburger-button .opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  .navBar .navItems {
+    grid-template-columns: 20% 20%;
+  }
+  .navBar .navItems .menu {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #1e3372;
+    width: 100vw;
+    clip-path: circle(50px at 80% -5%);
+    -webkit-clip-path: circle(30px at 93% 3%);
+    transition: all 0.7s ease;
+    pointer-events: none;
+  }
+  .navBar .navItems .menu .menu-items {
+    height: 100%;
+    display: flex;
+    justify-content: initial;
+    margin-top: 120px;
+    margin-left: 120px;
+    flex-direction: column;
+    transition: all 1s ease;
+  }
+  .navBar .navItems .menu .menu-items .hidden-register {
+    display: initial;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+  }
+  .navBar .navItems .menu .menu-items .hidden-register .hidden-register-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBar .navItems .menu .menu-items .hidden-register .hidden-register-items a {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .navBar .navItems .menu .menu-items a {
+    padding: 25px 0;
+    font-size: 46px;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  .navBar .navItems .open-menu {
+    background-color: #2550de;
+    left: 0;
+    clip-path: circle(1550px at 90% -10%);
+    -webkit-clip-path: circle(1550px at 90% -10%);
+    pointer-events: all;
+  }
+  .navBar .navItems .register {
+    display: none;
+  }
+  .navBar .navItems .hamburger-button {
+    display: initial;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navBar {
+    padding: 0 1rem;
+  }
+  .navBar .navItems .open-menu {
+    background-color: black;
+    left: 0;
+    clip-path: circle(1100px at 90% -10%);
+    -webkit-clip-path: circle(1100px at 90% -10%);
+    pointer-events: all;
+  }
+  .navBar .navItems .open-menu .menu-items {
+    margin-left: 40px;
+    transition: all 1s ease;
+  }
+}/*# sourceMappingURL=NavBar.css.map */

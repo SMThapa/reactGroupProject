@@ -1,0 +1,269 @@
+.contact {
+  min-height: 100vh;
+}
+
+.contact-page {
+  min-height: 80vh;
+  background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+.contact-page .contact-slogan {
+  margin-top: 15vh;
+  max-width: 1180px;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.contact-page .contact-slogan p {
+  font-size: 25px;
+  padding-bottom: 24px;
+  font-weight: 300;
+}
+.contact-page .contact-box {
+  max-width: 1200px;
+  width: 100%;
+  height: 50%;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  color: #2550de;
+}
+.contact-page .contact-box .user-query {
+  width: 65%;
+  background-color: white;
+  padding: 45px 70px;
+}
+.contact-page .contact-box .user-query h1 {
+  font-size: 2.5rem;
+  color: #1e3372;
+  font-weight: 500;
+}
+.contact-page .contact-box .user-query p {
+  margin: 22px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contact-page .contact-box .user-query p label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #61677A;
+}
+.contact-page .contact-box .user-query p input, .contact-page .contact-box .user-query p textarea {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #1e3372;
+  outline: 0;
+  padding-left: 8px;
+  padding-bottom: 2px;
+}
+.contact-page .contact-box .user-query button {
+  color: white;
+  background-color: #2550de;
+  border: 1px solid #2550de;
+  border-radius: 25px;
+  margin-top: 18x;
+  padding: 8px 18px;
+  float: right;
+  transition: all 0.4s ease;
+}
+.contact-page .contact-box .user-query button:hover {
+  color: #2550de;
+  border: 1px solid #2550de;
+  background-color: white;
+}
+.contact-page .contact-box .contact-info {
+  color: white;
+  width: 35%;
+  background-color: #2550de;
+  padding: 16px;
+}
+.contact-page .contact-box .contact-info h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+}
+.contact-page .contact-box .contact-info .contact-contacts {
+  height: 68%;
+  display: flex;
+  align-items: center;
+}
+.contact-page .contact-box .contact-info .contact-contacts .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-left: 45px;
+  height: 70%;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.contact-page .contact-box .contact-info .contact-contacts .contacts i {
+  font-size: 25px;
+  padding-right: 10px;
+}
+.contact-page .contact-box .contact-info .contact-contacts .contacts .contacts-item {
+  display: flex;
+  align-items: center;
+}
+.contact-page .contact-box .contact-info .contact-social {
+  padding-left: 45px;
+  font-size: 25px;
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+.contact-page .contact-box .contact-info .contact-social i {
+  transition: all 0.3s ease-in;
+  padding: 8px 12px;
+  border-radius: 100%;
+}
+.contact-page .contact-box .contact-info .contact-social i:hover {
+  background-color: #1e3372;
+  padding: 8px 12px;
+  border-radius: 100%;
+}
+
+.contact-map {
+  height: 60vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-top: 5vh;
+  background: linear-gradient(to top, #1e3372 0%, #1e3372 50%, white 50%, white 100%);
+}
+.contact-map h1 {
+  max-width: 1440px;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 400;
+  color: #2550de;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.contact-map .theMap {
+  height: 90%;
+  max-width: 1440px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.contact-map .theMap iframe {
+  border: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .contact-page .contact-slogan {
+    font-size: 25px;
+  }
+  .contact-page .contact-box {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .contact-page .contact-box .user-query {
+    width: 100%;
+  }
+  .contact-page .contact-box .contact-info {
+    height: 30vh;
+    width: 100%;
+  }
+  .contact-page .contact-box .contact-info .contact-contacts .contacts {
+    margin-top: 0px;
+  }
+  .contact-page .contact-box .contact-info .contact-social {
+    width: 30%;
+  }
+  .contact-map {
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    padding-top: 8vh;
+  }
+  .contact-page {
+    background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
+    padding: 0 1rem;
+  }
+  .contact-page .contact-slogan {
+    margin-top: 18px;
+  }
+  .contact-page .contact-slogan h1 {
+    font-size: 25px;
+  }
+  .contact-page .contact-slogan p {
+    font-size: 16px;
+  }
+  .contact-page .contact-box .user-query {
+    width: 100%;
+    padding: 25px 30px;
+  }
+  .contact-page .contact-box .user-query h1 {
+    font-size: 1.7rem;
+    color: #1e3372;
+    font-weight: 500;
+  }
+  .contact-page .contact-box .user-query p {
+    margin: 12px 0;
+  }
+  .contact-page .contact-box .user-query p label {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .contact-page .contact-box .user-query p input, .contact-page .contact-box .user-query p textarea {
+    font-size: 16px;
+  }
+  .contact-page .contact-box .user-query button {
+    font-size: 16px;
+  }
+  .contact-page .contact-box .contact-info {
+    width: 100%;
+  }
+  .contact-page .contact-box .contact-info h1 {
+    font-size: 1.5rem;
+  }
+  .contact-page .contact-box .contact-info .contact-contacts .contacts {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+  .contact-page .contact-box .contact-info .contact-contacts .contacts i {
+    font-size: 18px;
+  }
+  .contact-page .contact-box .contact-info .contact-social {
+    padding-left: 0;
+    font-size: 22px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-map {
+    margin-top: 0;
+    padding: 0 0;
+    height: 40vh;
+  }
+  .contact-map h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+  .contact-map .theMap {
+    height: 75%;
+    max-width: 1440px;
+    width: 100%;
+    background-color: #CCCCCC;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+}/*# sourceMappingURL=Contact.css.map */
