@@ -46,7 +46,7 @@ export const Hero = () => {
             <p className="text__background">Pikachu</p>
           </div>
           <div className="flex__item flex__item--right" />
-          <img className="pokemon__img" src="https://s4.postimg.org/fucnrdeq5/pikachu.png" />
+          <img className="pokemon__img" src="https://media.istockphoto.com/id/1267275828/photo/excited-african-guy-dancing-with-modern-smartphone.jpg?s=612x612&w=0&k=20&c=GqALlfG1FfZhwEhkCtMw31fJX-3GgbzeXIqHP96aXNQ=" />
         </div>
         <div className="flex__container flex--piplup animate--start" data-slide={2}>
           <div className="flex__item flex__item--left">
