@@ -2,7 +2,7 @@
   min-height: 100vh;
 }
 
-.contact-page {
+.contactPage {
   min-height: 80vh;
   background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
   padding: 0 3rem;
 }
-.contact-page .contact-slogan {
+.contactPage .contactSlogan {
   margin-top: 15vh;
   max-width: 1180px;
   width: 100%;
@@ -19,12 +19,12 @@
   font-weight: 500;
   color: white;
 }
-.contact-page .contact-slogan p {
+.contactPage .contactSlogan p {
   font-size: 25px;
   padding-bottom: 24px;
   font-weight: 300;
 }
-.contact-page .contact-box {
+.contactPage .contactBox {
   max-width: 1200px;
   width: 100%;
   height: 50%;
@@ -35,27 +35,27 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   color: #2550de;
 }
-.contact-page .contact-box .user-query {
+.contactPage .contactBox .userQuery {
   width: 65%;
   background-color: white;
   padding: 45px 70px;
 }
-.contact-page .contact-box .user-query h1 {
+.contactPage .contactBox .userQuery h1 {
   font-size: 2.5rem;
   color: #1e3372;
   font-weight: 500;
 }
-.contact-page .contact-box .user-query p {
+.contactPage .contactBox .userQuery p {
   margin: 22px 0;
   display: flex;
   flex-direction: column;
 }
-.contact-page .contact-box .user-query p label {
+.contactPage .contactBox .userQuery p label {
   font-size: 16px;
   margin-bottom: 5px;
   color: #61677A;
 }
-.contact-page .contact-box .user-query p input, .contact-page .contact-box .user-query p textarea {
+.contactPage .contactBox .userQuery p input, .contactPage .contactBox .userQuery p textarea {
   font-size: 18px;
   border: none;
   border-bottom: 1px solid #1e3372;
@@ -63,7 +63,7 @@
   padding-left: 8px;
   padding-bottom: 2px;
 }
-.contact-page .contact-box .user-query button {
+.contactPage .contactBox .userQuery button {
   color: white;
   background-color: #2550de;
   border: 1px solid #2550de;
@@ -73,29 +73,29 @@
   float: right;
   transition: all 0.4s ease;
 }
-.contact-page .contact-box .user-query button:hover {
+.contactPage .contactBox .userQuery button:hover {
   color: #2550de;
   border: 1px solid #2550de;
   background-color: white;
 }
-.contact-page .contact-box .contact-info {
+.contactPage .contactBox .contactnIfo {
   color: white;
   width: 35%;
   background-color: #2550de;
   padding: 16px;
 }
-.contact-page .contact-box .contact-info h1 {
+.contactPage .contactBox .contactnIfo h1 {
   font-size: 2rem;
   color: white;
   font-weight: 300;
   margin-top: 20px;
 }
-.contact-page .contact-box .contact-info .contact-contacts {
+.contactPage .contactBox .contactnIfo .contactContacts {
   height: 68%;
   display: flex;
   align-items: center;
 }
-.contact-page .contact-box .contact-info .contact-contacts .contacts {
+.contactPage .contactBox .contactnIfo .contactContacts .contacts {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -104,33 +104,33 @@
   justify-content: space-around;
   font-size: 16px;
 }
-.contact-page .contact-box .contact-info .contact-contacts .contacts i {
+.contactPage .contactBox .contactnIfo .contactContacts .contacts i {
   font-size: 25px;
   padding-right: 10px;
 }
-.contact-page .contact-box .contact-info .contact-contacts .contacts .contacts-item {
+.contactPage .contactBox .contactnIfo .contactContacts .contacts .contactsItem {
   display: flex;
   align-items: center;
 }
-.contact-page .contact-box .contact-info .contact-social {
+.contactPage .contactBox .contactnIfo .contactSocial {
   padding-left: 45px;
   font-size: 25px;
   display: flex;
   width: 45%;
   justify-content: space-between;
 }
-.contact-page .contact-box .contact-info .contact-social i {
+.contactPage .contactBox .contactnIfo .contactSocial i {
   transition: all 0.3s ease-in;
   padding: 8px 12px;
   border-radius: 100%;
 }
-.contact-page .contact-box .contact-info .contact-social i:hover {
+.contactPage .contactBox .contactnIfo .contactSocial i:hover {
   background-color: #1e3372;
   padding: 8px 12px;
   border-radius: 100%;
 }
 
-.contact-map {
+.contactMap {
   height: 60vh;
   max-width: 100%;
   display: flex;
@@ -141,7 +141,7 @@
   margin-top: 5vh;
   background: linear-gradient(to top, #1e3372 0%, #1e3372 50%, white 50%, white 100%);
 }
-.contact-map h1 {
+.contactMap h1 {
   max-width: 1440px;
   width: 100%;
   font-size: 40px;
@@ -150,7 +150,7 @@
   padding-left: 25px;
   padding-bottom: 15px;
 }
-.contact-map .theMap {
+.contactMap .theMap {
   height: 90%;
   max-width: 1440px;
   width: 100%;
@@ -158,36 +158,36 @@
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.contact-map .theMap iframe {
+.contactMap .theMap iframe {
   border: none;
 }
 
 @media screen and (max-width: 1150px) {
-  .contact-page .contact-slogan {
+  .contactPage .contactSlogan {
     font-size: 25px;
   }
-  .contact-page .contact-box {
+  .contactPage .contactBox {
     display: flex;
     flex-direction: column;
     height: auto;
   }
-  .contact-page .contact-box .user-query {
+  .contactPage .contactBox .userQuery {
     width: 100%;
   }
-  .contact-page .contact-box .contact-info {
+  .contactPage .contactBox .contactInfo {
     height: 30vh;
     width: 100%;
   }
-  .contact-page .contact-box .contact-info h1 {
+  .contactPage .contactBox .contactInfo h1 {
     margin-top: 0;
   }
-  .contact-page .contact-box .contact-info .contact-contacts .contacts {
+  .contactPage .contactBox .contactInfo .contactContacts .contacts {
     margin-top: 0px;
   }
-  .contact-page .contact-box .contact-info .contact-social {
+  .contactPage .contactBox .contactInfo .contactSocial {
     width: 30%;
   }
-  .contact-map {
+  .contactMap {
     margin-top: 5vh;
   }
 }
@@ -195,55 +195,55 @@
   .contact {
     padding-top: 8vh;
   }
-  .contact-page {
+  .contactPage {
     background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
     padding: 0 1rem;
   }
-  .contact-page .contact-slogan {
+  .contactPage .contactSlogan {
     margin-top: 18px;
   }
-  .contact-page .contact-slogan h1 {
+  .contactPage .contactSlogan h1 {
     font-size: 25px;
   }
-  .contact-page .contact-slogan p {
+  .contactPage .contactSlogan p {
     font-size: 16px;
   }
-  .contact-page .contact-box .user-query {
+  .contactPage .contactBox .userQuery {
     width: 100%;
     padding: 25px 30px;
   }
-  .contact-page .contact-box .user-query h1 {
+  .contactPage .contactBox .userQuery h1 {
     font-size: 1.7rem;
     color: #1e3372;
     font-weight: 500;
   }
-  .contact-page .contact-box .user-query p {
+  .contactPage .contactBox .userQuery p {
     margin: 12px 0;
   }
-  .contact-page .contact-box .user-query p label {
+  .contactPage .contactBox .userQuery p label {
     font-size: 12px;
     margin-bottom: 3px;
   }
-  .contact-page .contact-box .user-query p input, .contact-page .contact-box .user-query p textarea {
+  .contactPage .contactBox .userQuery p input, .contactPage .contactBox .userQuery p textarea {
     font-size: 16px;
   }
-  .contact-page .contact-box .user-query button {
+  .contactPage .contactBox .userQuery button {
     font-size: 16px;
   }
-  .contact-page .contact-box .contact-info {
+  .contactPage .contactBox .contactInfo {
     width: 100%;
   }
-  .contact-page .contact-box .contact-info h1 {
+  .contactPage .contactBox .contactInfo h1 {
     font-size: 1.5rem;
   }
-  .contact-page .contact-box .contact-info .contact-contacts .contacts {
+  .contactPage .contactBox .contactInfo .contactContacts .contacts {
     font-size: 12px;
     padding-left: 8px;
   }
-  .contact-page .contact-box .contact-info .contact-contacts .contacts i {
+  .contactPage .contactBox .contactInfo .contactContacts .contacts i {
     font-size: 18px;
   }
-  .contact-page .contact-box .contact-info .contact-social {
+  .contactPage .contactBox .contactInfo .contactSocial {
     padding-left: 0;
     font-size: 22px;
     display: flex;
@@ -251,17 +251,17 @@
     justify-content: center;
     align-items: center;
   }
-  .contact-map {
+  .contactMap {
     margin-top: 0;
     padding: 0 0;
     height: 40vh;
   }
-  .contact-map h1 {
+  .contactMap h1 {
     font-size: 1.7rem;
     font-weight: 400;
     padding-bottom: 5px;
   }
-  .contact-map .theMap {
+  .contactMap .theMap {
     height: 75%;
     max-width: 1440px;
     width: 100%;
@@ -270,4 +270,4 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
-}/*# sourceMappingURL=Contact.css.map */
+}/*# sourceMappingURL=Contact.module.css.map */
