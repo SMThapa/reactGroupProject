@@ -1,7 +1,7 @@
 import { useTitle } from "../Hooks/useTitle"
 import { NavLink } from "react-router-dom"
 
-import style  from '../Style/ComponentStyle/Contact/Contact.module.css';
+import style from '../Style/ComponentStyle/Contact/Contact.module.css';
 
 export const Contact = () => {
 
