@@ -78,24 +78,24 @@
   border: 1px solid #2550de;
   background-color: white;
 }
-.contactPage .contactBox .contactnIfo {
+.contactPage .contactBox .contactInfo {
   color: white;
   width: 35%;
   background-color: #2550de;
   padding: 16px;
 }
-.contactPage .contactBox .contactnIfo h1 {
+.contactPage .contactBox .contactInfo h1 {
   font-size: 2rem;
   color: white;
   font-weight: 300;
   margin-top: 20px;
 }
-.contactPage .contactBox .contactnIfo .contactContacts {
+.contactPage .contactBox .contactInfo .contactContacts {
   height: 68%;
   display: flex;
   align-items: center;
 }
-.contactPage .contactBox .contactnIfo .contactContacts .contacts {
+.contactPage .contactBox .contactInfo .contactContacts .contacts {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -104,27 +104,27 @@
   justify-content: space-around;
   font-size: 16px;
 }
-.contactPage .contactBox .contactnIfo .contactContacts .contacts i {
+.contactPage .contactBox .contactInfo .contactContacts .contacts i {
   font-size: 25px;
   padding-right: 10px;
 }
-.contactPage .contactBox .contactnIfo .contactContacts .contacts .contactsItem {
+.contactPage .contactBox .contactInfo .contactContacts .contacts .contactsItem {
   display: flex;
   align-items: center;
 }
-.contactPage .contactBox .contactnIfo .contactSocial {
+.contactPage .contactBox .contactInfo .contactSocial {
   padding-left: 45px;
   font-size: 25px;
   display: flex;
   width: 45%;
   justify-content: space-between;
 }
-.contactPage .contactBox .contactnIfo .contactSocial i {
+.contactPage .contactBox .contactInfo .contactSocial i {
   transition: all 0.3s ease-in;
   padding: 8px 12px;
   border-radius: 100%;
 }
-.contactPage .contactBox .contactnIfo .contactSocial i:hover {
+.contactPage .contactBox .contactInfo .contactSocial i:hover {
   background-color: #1e3372;
   padding: 8px 12px;
   border-radius: 100%;
