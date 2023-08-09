@@ -9,7 +9,7 @@
 }
 
 body,
-input {
+.inputfield {
   font-family: "Poppins", sans-serif;
 }
 
@@ -39,7 +39,7 @@ main {
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.333);
 }
 
-.inner-box {
+.innerBox {
   position: absolute;
   width: calc(100% - 4.1rem);
   height: calc(100% - 4.1rem);
@@ -48,7 +48,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.forms-wrap {
+.formsWrap {
   position: absolute;
   height: 100%;
   width: 45%;
@@ -60,7 +60,7 @@ main {
   transition: 0.8s ease-in-out;
 }
 
-form {
+.signinForm .signupForm {
   max-width: 260px;
   width: 100%;
   margin: 0 auto;
@@ -73,7 +73,7 @@ form {
   transition: opacity 0.02s 0.4s;
 }
 
-form.sign-up-form {
+.signupForm {
   opacity: 0;
   pointer-events: none;
 }
@@ -115,13 +115,13 @@ form.sign-up-form {
   color: #8371fd;
 }
 
-.input-wrap {
+.inputWrap {
   position: relative;
   height: 37px;
   margin-bottom: 2rem;
 }
 
-.input-field {
+.inputField {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -135,7 +135,7 @@ form.sign-up-form {
   transition: 0.4s;
 }
 
-label {
+.label {
   position: absolute;
   left: 0;
   top: 50%;
@@ -146,16 +146,16 @@ label {
   transition: 0.4s;
 }
 
-.input-field.active {
+.inputField.active {
   border-bottom-color: #151111;
 }
 
-.input-field.active + label {
+.inputField.active + label {
   font-size: 0.75rem;
   top: -2px;
 }
 
-.sign-btn {
+.signBtn {
   display: inline-block;
   width: 100%;
   height: 43px;
@@ -169,7 +169,7 @@ label {
   transition: 0.3s;
 }
 
-.sign-btn:hover {
+.signBtn:hover {
   background-color: #8371fd;
 }
 
@@ -187,21 +187,21 @@ label {
   color: #8371fd;
 }
 
-main.sign-up-mode form.sign-in-form {
+main.signupMode .signinForm {
   opacity: 0;
   pointer-events: none;
 }
 
-main.sign-up-mode form.sign-up-form {
+main.signupMode .signupForm {
   opacity: 1;
   pointer-events: all;
 }
 
-main.sign-up-mode .forms-wrap {
+main.signupMode .formsWrap {
   left: 55%;
 }
 
-main.sign-up-mode .carousele {
+main.signupMode .carousele {
   left: 0%;
 }
 
@@ -220,7 +220,7 @@ main.sign-up-mode .carousele {
   transition: 0.8s ease-in-out;
 }
 
-.images-wrapper {
+.imagesWrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -234,37 +234,37 @@ main.sign-up-mode .carousele {
   transition: opacity 0.3s, transform 0.5s;
 }
 
-.img-1 {
+.img1 {
   transform: translate(0, -50px);
 }
 
-.img-2 {
+.img2 {
   transform: scale(0.4, 0.5);
 }
 
-.img-3 {
+.img3 {
   transform: scale(0.3) rotate(-20deg);
 }
 
-.image.show {
+/* .image {
   opacity: 1;
   transform: none;
-}
+} */
 
-.text-slider {
+.textSlider {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.text-wrap {
+.textWrap {
   max-height: 2.2rem;
   overflow: hidden;
   margin-bottom: 2.5rem;
 }
 
-.text-group {
+.textGroup {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -272,7 +272,7 @@ main.sign-up-mode .carousele {
   transition: 0.5s;
 }
 
-.text-group h2 {
+.textGroup h2 {
   line-height: 2.2rem;
   font-weight: 600;
   font-size: 1.6rem;
@@ -308,7 +308,7 @@ main.sign-up-mode .carousele {
     overflow: hidden;
   }
 
-  .inner-box {
+  .innerBox {
     position: static;
     transform: none;
     width: revert;
@@ -316,13 +316,13 @@ main.sign-up-mode .carousele {
     padding: 2rem;
   }
 
-  .forms-wrap {
+  .formsWrap {
     position: revert;
     width: 100%;
     height: auto;
   }
 
-  form {
+  .signinForm .signupForm {
     max-width: revert;
     padding: 1.5rem 2.5rem 2rem;
     transition: transform 0.8s ease-in-out, opacity 0.45s linear;
@@ -332,15 +332,15 @@ main.sign-up-mode .carousele {
     margin: 2rem 0;
   }
 
-  form.sign-up-form {
+  .signupForm {
     transform: translateX(100%);
   }
 
-  main.sign-up-mode form.sign-in-form {
+  main.signupMode .signinForm {
     transform: translateX(-100%);
   }
 
-  main.sign-up-mode form.sign-up-form {
+  main.signupMode .signupForm {
     transform: translateX(0%);
   }
 
@@ -352,11 +352,11 @@ main.sign-up-mode .carousele {
     display: flex;
   }
 
-  .images-wrapper {
+  .imagesWrapper {
     display: none;
   }
 
-  .text-slider {
+  .textSlider {
     width: 100%;
   }
 }
@@ -370,7 +370,7 @@ main.sign-up-mode .carousele {
     border-radius: 2rem;
   }
 
-  .inner-box {
+  .innerBox {
     padding: 1rem;
   }
 
@@ -379,11 +379,11 @@ main.sign-up-mode .carousele {
     border-radius: 1.6rem;
   }
 
-  .text-wrap {
+  .textWrap {
     margin-bottom: 1rem;
   }
 
-  .text-group h2 {
+  .textGroup h2 {
     font-size: 1.2rem;
   }
 

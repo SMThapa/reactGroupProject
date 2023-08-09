@@ -9,29 +9,28 @@ import "../Style/hero.css";
 
 
 export const Hero = () => {
-
-  document.querySelector('.slide-nav').on('click', function (e) {
-    e.preventDefault();
-    // get current slide
-    var current = document.querySelector('.flex--active').data('slide'),
-      // get button data-slide
-      next = document.querySelector(this).data('slide');
-
-    document.querySelector('.slide-nav').removeClass('active');
-    document.querySelector(this).addClass('active');
-
-    if (current === next) {
-      return false;
-    } else {
-      document.querySelector('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-      document.querySelector('.flex--active').addClass('animate--end');
-      setTimeout(function () {
-        document.querySelector('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-        document.querySelector('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-      }, 800);
-    }
-  });
-
+  
+  // document.getElementByClassName("slide-nav").addEventListener('click', (e) => {
+  //   e.preventDefault();
+    
+  //   let current = document.getElementByClassName("flex--active").data('slide'),
+      
+  //     next = this.data('slide');
+  
+  //   document.getElementByClassName("slide-nav").classList.remove("active");
+  //   this.classList.add("active");
+  
+  //   if (current === next) {
+  //     return false;
+  //   } else {
+  //     document.getElementByClassName("slider__warpper").find('.flex__container[data-slide=' + next + ']').classList.add("flex--preStart");
+  //     document.getElementByClassName("flex--active").classList.add("animate--end");
+  //     setTimeout(function() {
+  //       document.getElementByClassName("flex--preStart").removeClass('animate--start flex--preStart').classList.add("flex--active");
+  //       document.getElementByClassName("animate--end").classList.add("animate--start").removeClass('animate--end flex--active');
+  //     }, 800);
+  //   }
+  // });
 
 
   return (
