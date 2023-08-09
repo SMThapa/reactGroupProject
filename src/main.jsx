@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import './index.css'
 import { ScrollToTop } from './Others/ScrollToTop.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from "jquery";
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

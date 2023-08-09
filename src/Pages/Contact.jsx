@@ -1,6 +1,6 @@
 import { useTitle } from "../Hooks/useTitle"
 import { NavLink } from "react-router-dom"
-import '../Style/ComponentStyle/Contact/Contact.css'
+import '../Style/ComponentStyle/Contact/Contact.module.css'
 
 export const Contact = () => {
 
