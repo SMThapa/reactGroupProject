@@ -1,4 +1,4 @@
-import '../Style/login.module.css';
+import login from '../Style/login.module.css';
 
 
 export const LoginPage = () => {
@@ -45,8 +45,8 @@ bullets.forEach((bullet) => {
 });
   return (
     <main>
-        <div className="box">
-          <div className="inner-box">
+        <div className={login.box}>
+          <div className={login.innerBox}>
             <div className="forms-wrap">
               <form action="index.html" autoComplete="off" className="sign-in-form">
                 <div className="logo">
