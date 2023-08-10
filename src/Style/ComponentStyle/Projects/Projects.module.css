@@ -1,0 +1,30 @@
+.Project {
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100%;
+}
+.Project .headerSlogan {
+  height: 50%;
+  width: 100%;
+  background-color: #1e3372;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Project .headerSlogan .slogan {
+  height: auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.7rem;
+  padding: 0 5rem;
+}
+.Project .headerSlogan .slogan p {
+  margin-top: 10px;
+  width: 48%;
+  font-size: 15px;
+}/*# sourceMappingURL=Projects.module.css.map */

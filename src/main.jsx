@@ -7,6 +7,7 @@ import './index.css'
 import { ScrollToTop } from './Others/ScrollToTop.jsx'
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
