@@ -200,7 +200,7 @@ body {
 
 .pokemon__img {
 	position: absolute;
-	bottom: 20px;
+	bottom: -20px;
 	right: 15%;
 	max-height: 40vw;
 	opacity: 1;

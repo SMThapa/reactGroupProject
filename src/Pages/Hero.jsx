@@ -1,16 +1,28 @@
 import "../Style/hero.css";
 
 export const Hero = () => {
-
-  // document.querySelector('.slide-nav').on('click', function (e) {
+  
+  // document.getElementByClassName("slide-nav").addEventListener('click', (e) => {
   //   e.preventDefault();
-  //   // get current slide
-  //   var current = document.querySelector('.flex--active').data('slide'),
-  //     // get button data-slide
-  //     next = document.querySelector(this).data('slide');
-
-  //   document.querySelector('.slide-nav').removeClass('active');
-  //   document.querySelector(this).addClass('active');
+    
+  //   let current = document.getElementByClassName("flex--active").data('slide'),
+      
+  //     next = this.data('slide');
+  
+  //   document.getElementByClassName("slide-nav").classList.remove("active");
+  //   this.classList.add("active");
+  
+  //   if (current === next) {
+  //     return false;
+  //   } else {
+  //     document.getElementByClassName("slider__warpper").find('.flex__container[data-slide=' + next + ']').classList.add("flex--preStart");
+  //     document.getElementByClassName("flex--active").classList.add("animate--end");
+  //     setTimeout(function() {
+  //       document.getElementByClassName("flex--preStart").removeClass('animate--start flex--preStart').classList.add("flex--active");
+  //       document.getElementByClassName("animate--end").classList.add("animate--start").removeClass('animate--end flex--active');
+  //     }, 800);
+  //   }
+  // });
 
   //   if (current === next) {
   //     return false;
@@ -37,7 +49,7 @@ export const Hero = () => {
             <p className="text__background">Pikachu</p>
           </div>
           <div className="flex__item flex__item--right" />
-          <img className="pokemon__img" src="https://s4.postimg.org/fucnrdeq5/pikachu.png" />
+          <img className="pokemon__img" src="https://media.istockphoto.com/id/1267275828/photo/excited-african-guy-dancing-with-modern-smartphone.jpg?s=612x612&w=0&k=20&c=GqALlfG1FfZhwEhkCtMw31fJX-3GgbzeXIqHP96aXNQ=" />
         </div>
         <div className="flex__container flex--piplup animate--start" data-slide={2}>
           <div className="flex__item flex__item--left">
