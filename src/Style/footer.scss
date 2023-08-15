@@ -1,0 +1,20 @@
+// Variables
+$facebook: #73737ed0;
+$twitter: #181a1b;
+
+// Custom CSS
+.bg-facebook {
+  background-color: $facebook;
+
+  &:hover {
+    background-color: darken($facebook, 5%);
+  }
+}
+
+.bg-twitter {
+  background-color: $twitter;
+
+  &:hover {
+    background-color: darken($twitter, 5%);
+  }
+}

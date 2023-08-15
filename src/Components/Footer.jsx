@@ -1,3 +1,7 @@
+import "../Style/footer.scss";
+
+
+
 export const Footer = () => {
   return (
     <div className="bg-gray-100 py-8 sm:py-12">
