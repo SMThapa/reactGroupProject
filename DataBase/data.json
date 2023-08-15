@@ -1,0 +1,32 @@
+{
+    "projects":[
+        {
+            "id": "01",
+            "link":"https://banchharams.com/",
+            "image": [
+                "https://res.cloudinary.com/dvirqrzq3/image/upload/v1692018347/CodTrees/banchharam_00.png",
+                "https://res.cloudinary.com/dvirqrzq3/image/upload/v1692018348/CodTrees/banchharam_01.jpg"
+                ],
+            "client": "Banchharam's",
+            "type":"e-Commerce Website",
+            "teckStack":["Bootstrap", "HTML", "JavaScript", "jQuery", "Wordpress"],
+            "colorPallet":["#ff6900","#f69321", "#1e427c"],
+            "typography":["Playfair Display", "Cinzel", "Times New Roman"],
+            "description":""
+        },
+        {
+            "id": "02",
+            "link":"https://ivaanledlights.com/",
+            "image": [
+                "https://res.cloudinary.com/dvirqrzq3/image/upload/v1692018347/CodTrees/ivanLED_00.png",
+                "https://res.cloudinary.com/dvirqrzq3/image/upload/v1692018348/CodTrees/ivanLED_01.png"
+                ],
+            "client": "IVAAN LED LIGHTS",
+            "type":"e-Commerce Website",
+            "teckStack":["HTML", "JavaScript", "jQuery", "Wordpress"],
+            "colorPallet":["#004C9A","#cccccc", "#666666"],
+            "typography":["BROmny", "Times New Roman", "Montserrat"],
+            "description":""
+        }
+    ]
+}

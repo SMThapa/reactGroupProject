@@ -1,33 +1,37 @@
 .contact {
   min-height: 100vh;
+  background: linear-gradient(to top, #1e3372 0%, #1e3372 75%, white 35%, white 100%);
 }
-
-.contactPage {
+.contact .contactPage {
+  padding-top: 19vh;
   min-height: 80vh;
-  background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  margin: 0 3rem;
 }
-.contactPage .contactSlogan {
-  margin-top: 16vh;
-  max-width: 1180px;
+.contact .contactPage .contactSlogan {
+  max-width: 1150px;
   width: 100%;
-  font-size: 40px;
-  font-weight: 500;
-  color: white;
+  color: #1e3372;
+  margin-bottom: 18px;
 }
-.contactPage .contactSlogan p {
-  font-size: 25px;
+.contact .contactPage .contactSlogan h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 90%;
+}
+.contact .contactPage .contactSlogan p {
+  font-size: 20px;
+  padding-left: 18px;
   padding-bottom: 24px;
-  font-weight: 300;
+  font-weight: 500;
 }
-.contactPage .contactBox {
-  max-width: 1200px;
+.contact .contactPage .contactBox {
+  max-width: 1100px;
   width: 100%;
-  height: 50%;
+  height: 460px;
   border: 1px solid transparent;
   border-radius: 16px;
   overflow: hidden;
@@ -35,27 +39,30 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   color: #2550de;
 }
-.contactPage .contactBox .userQuery {
+.contact .contactPage .contactBox .userQuery {
   width: 65%;
   background-color: white;
-  padding: 45px 70px;
+  padding: 15px 60px;
 }
-.contactPage .contactBox .userQuery h1 {
+.contact .contactPage .contactBox .userQuery form {
+  padding: 0 0 0;
+}
+.contact .contactPage .contactBox .userQuery h1 {
   font-size: 2.5rem;
   color: #1e3372;
   font-weight: 500;
 }
-.contactPage .contactBox .userQuery p {
-  margin: 22px 0;
+.contact .contactPage .contactBox .userQuery p {
+  margin: 15px 0;
   display: flex;
   flex-direction: column;
 }
-.contactPage .contactBox .userQuery p label {
+.contact .contactPage .contactBox .userQuery p label {
   font-size: 16px;
   margin-bottom: 5px;
   color: #61677A;
 }
-.contactPage .contactBox .userQuery p input, .contactPage .contactBox .userQuery p textarea {
+.contact .contactPage .contactBox .userQuery p input, .contact .contactPage .contactBox .userQuery p textarea {
   font-size: 18px;
   border: none;
   border-bottom: 1px solid #1e3372;
@@ -63,7 +70,7 @@
   padding-left: 8px;
   padding-bottom: 2px;
 }
-.contactPage .contactBox .userQuery button {
+.contact .contactPage .contactBox .userQuery button {
   color: white;
   background-color: #2550de;
   border: 1px solid #2550de;
@@ -73,86 +80,84 @@
   float: right;
   transition: all 0.4s ease;
 }
-.contactPage .contactBox .userQuery button:hover {
+.contact .contactPage .contactBox .userQuery button:hover {
   color: #2550de;
   border: 1px solid #2550de;
   background-color: white;
 }
-.contactPage .contactBox .contactInfo {
+.contact .contactPage .contactBox .contactInfo {
   color: white;
   width: 35%;
   background-color: #2550de;
   padding: 16px;
 }
-.contactPage .contactBox .contactInfo h1 {
+.contact .contactPage .contactBox .contactInfo h1 {
   font-size: 2rem;
   color: white;
   font-weight: 300;
   margin-top: 20px;
 }
-.contactPage .contactBox .contactInfo .contactContacts {
+.contact .contactPage .contactBox .contactInfo .contactContacts {
   height: 68%;
   display: flex;
   align-items: center;
 }
-.contactPage .contactBox .contactInfo .contactContacts .contacts {
+.contact .contactPage .contactBox .contactInfo .contactContacts .contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   padding-left: 45px;
   height: 70%;
   justify-content: space-around;
   font-size: 16px;
 }
-.contactPage .contactBox .contactInfo .contactContacts .contacts i {
+.contact .contactPage .contactBox .contactInfo .contactContacts .contacts i {
   font-size: 25px;
   padding-right: 10px;
 }
-.contactPage .contactBox .contactInfo .contactContacts .contacts .contactsItem {
+.contact .contactPage .contactBox .contactInfo .contactContacts .contacts .contactsItem {
   display: flex;
   align-items: center;
 }
-.contactPage .contactBox .contactInfo .contactSocial {
+.contact .contactPage .contactBox .contactInfo .contactSocial {
   padding-left: 45px;
   font-size: 25px;
   display: flex;
   width: 45%;
   justify-content: space-between;
 }
-.contactPage .contactBox .contactInfo .contactSocial i {
+.contact .contactPage .contactBox .contactInfo .contactSocial i {
   transition: all 0.3s ease-in;
   padding: 8px 12px;
   border-radius: 100%;
 }
-.contactPage .contactBox .contactInfo .contactSocial i:hover {
+.contact .contactPage .contactBox .contactInfo .contactSocial i:hover {
   background-color: #1e3372;
   padding: 8px 12px;
   border-radius: 100%;
 }
 
 .contactMap {
-  height: 60vh;
-  max-width: 100%;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 25px;
-  margin-top: 5vh;
-  background: linear-gradient(to top, #1e3372 0%, #1e3372 50%, white 50%, white 100%);
+  padding: 5rem 25px;
+  margin-top: 2vh;
+  background-color: #1e3372;
 }
 .contactMap h1 {
-  max-width: 1440px;
+  max-width: 1400px;
   width: 100%;
-  font-size: 40px;
-  font-weight: 400;
-  color: #2550de;
-  padding-left: 25px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: White;
   padding-bottom: 15px;
 }
 .contactMap .theMap {
-  height: 90%;
-  max-width: 1440px;
+  height: 80%;
+  max-width: 1400px;
   width: 100%;
   border-radius: 4px;
   overflow: hidden;
@@ -163,87 +168,101 @@
 }
 
 @media screen and (max-width: 1150px) {
-  .contactPage .contactSlogan {
-    font-size: 25px;
+  .contact .contactPage {
+    padding-top: 15vh;
   }
-  .contactPage .contactBox {
+  .contact .contactPage .contactSlogan h1 {
+    font-size: 3rem;
+  }
+  .contact .contactMap {
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 980px) {
+  .contact .contactPage .contactBox {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 90%;
   }
-  .contactPage .contactBox .userQuery {
+  .contact .contactPage .contactBox .userQuery {
     width: 100%;
   }
-  .contactPage .contactBox .contactInfo {
-    height: 30vh;
+  .contact .contactPage .contactBox .contactInfo {
+    height: 40vh;
     width: 100%;
   }
-  .contactPage .contactBox .contactInfo h1 {
+  .contact .contactPage .contactBox .contactInfo h1 {
     margin-top: 0;
   }
-  .contactPage .contactBox .contactInfo .contactContacts .contacts {
+  .contact .contactPage .contactBox .contactInfo .contactContacts .contacts {
     margin-top: 0px;
   }
-  .contactPage .contactBox .contactInfo .contactSocial {
+  .contact .contactPage .contactBox .contactInfo .contactSocial {
     width: 30%;
-  }
-  .contactMap {
-    margin-top: 5vh;
   }
 }
 @media screen and (max-width: 600px) {
   .contact {
-    padding-top: 8vh;
+    background: linear-gradient(to top, #1e3372 0%, #1e3372 60%, white 50%, white 100%);
+    padding-top: 9vh;
   }
-  .contactPage {
-    background: linear-gradient(to top, white 0%, white 40%, #1e3372 40%, #1e3372 100%);
-    padding: 0 1rem;
+  .contact .contactPage {
+    padding-top: 0;
+    margin: 0 1rem;
   }
-  .contactPage .contactSlogan {
+  .contact .contactPage .contactSlogan {
     margin-top: 18px;
   }
-  .contactPage .contactSlogan h1 {
+  .contact .contactPage .contactSlogan h1 {
     font-size: 25px;
   }
-  .contactPage .contactSlogan p {
+  .contact .contactPage .contactSlogan p {
     font-size: 16px;
   }
-  .contactPage .contactBox .userQuery {
+  .contact .contactPage .contactBox {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .contactPage .contactBox .userQuery {
     width: 100%;
     padding: 25px 30px;
   }
-  .contactPage .contactBox .userQuery h1 {
+  .contact .contactPage .contactBox .userQuery h1 {
     font-size: 1.7rem;
     color: #1e3372;
     font-weight: 500;
   }
-  .contactPage .contactBox .userQuery p {
+  .contact .contactPage .contactBox .userQuery p {
     margin: 12px 0;
   }
-  .contactPage .contactBox .userQuery p label {
+  .contact .contactPage .contactBox .userQuery p label {
     font-size: 12px;
     margin-bottom: 3px;
   }
-  .contactPage .contactBox .userQuery p input, .contactPage .contactBox .userQuery p textarea {
+  .contact .contactPage .contactBox .userQuery p input, .contact .contactPage .contactBox .userQuery p textarea {
     font-size: 16px;
   }
-  .contactPage .contactBox .userQuery button {
+  .contact .contactPage .contactBox .userQuery button {
     font-size: 16px;
   }
-  .contactPage .contactBox .contactInfo {
+  .contact .contactPage .contactBox .contactInfo {
+    height: 30vh;
     width: 100%;
   }
-  .contactPage .contactBox .contactInfo h1 {
+  .contact .contactPage .contactBox .contactInfo h1 {
     font-size: 1.5rem;
   }
-  .contactPage .contactBox .contactInfo .contactContacts .contacts {
+  .contact .contactPage .contactBox .contactInfo .contactContacts .contacts {
     font-size: 12px;
     padding-left: 8px;
   }
-  .contactPage .contactBox .contactInfo .contactContacts .contacts i {
+  .contact .contactPage .contactBox .contactInfo .contactContacts .contacts i {
     font-size: 18px;
   }
-  .contactPage .contactBox .contactInfo .contactSocial {
+  .contact .contactPage .contactBox .contactInfo .contactSocial {
     padding-left: 0;
     font-size: 22px;
     display: flex;
@@ -251,17 +270,18 @@
     justify-content: center;
     align-items: center;
   }
-  .contactMap {
+  .contact .contactMap {
     margin-top: 0;
     padding: 0 0;
     height: 40vh;
   }
-  .contactMap h1 {
+  .contact .contactMap h1 {
     font-size: 1.7rem;
     font-weight: 400;
     padding-bottom: 5px;
+    padding: 0 1rem;
   }
-  .contactMap .theMap {
+  .contact .contactMap .theMap {
     height: 75%;
     max-width: 1440px;
     width: 100%;

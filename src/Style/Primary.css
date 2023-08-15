@@ -1,5 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@500;600;700&display=swap");
+a, p, button {
+  font-family: "Lato", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e3372;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,17 +23,9 @@
   box-sizing: border-box;
 }
 
-.headerFont {
-  font-family: "Oswald", sans-serif;
-}
-
-.bodyFont {
-  font-family: "Poppins", sans-serif;
-}
-
-a {
+.active {
   color: white;
-  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 
 .theContainer {
@@ -37,13 +45,31 @@ a {
   align-items: center;
 }
 
-.theFooter {
-  height: 30vh;
-  background-color: #1e3372;
+.animateButton01 {
+  border: 1px solid #2550de;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  color: #2550de;
+}
+.animateButton01::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: #2550de;
+  z-index: -1;
+  transition: 0.7s;
+  right: 0;
+  border-radius: 0 0 50% 50%;
+}
+.animateButton01:hover {
+  background-color: #2550de;
   color: white;
-  font-size: 45px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.animateButton01:hover::before {
+  height: 180%;
 }/*# sourceMappingURL=Primary.css.map */

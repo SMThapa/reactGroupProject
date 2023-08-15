@@ -1,9 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Montserrat:wght@500;600;700&display=swap');
 
+// h1{
+//     font-family: 'Montserrat', sans-serif;
+// }
+
+a, p, button{
+    font-family: 'Lato', sans-serif;
+}
 
 $sky-blue :#2550de;
 $dark-blue :#1e3372;
+
+//custom scroll bar
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $dark-blue;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    // margin-block: 2px;
+    // border-radius: 100vw;
+}
+
 
 *{
     padding: 0;
@@ -12,17 +35,12 @@ $dark-blue :#1e3372;
     box-sizing: border-box;
 }
 
-.headerFont{
-    font-family:'Oswald', sans-serif;
-}
-.bodyFont{
-    font-family: 'Poppins', sans-serif;
+
+.active{
+    color: white;
+    border-bottom: 2px solid white;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-}
 
 .theContainer{
     min-height: 100vh;
@@ -40,13 +58,31 @@ a{
     align-items: center;
 }
 
-.theFooter{
-    height: 30vh;
-    background-color: $dark-blue;
-    color: white;
-    font-size: 45px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.animateButton01{    
+    border: 1px solid $sky-blue;
+    border-radius: 100%;
+    cursor: pointer;    
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    color: $sky-blue;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        background: $sky-blue;
+        z-index: -1;
+        transition: 0.7s;
+        right: 0;
+        border-radius: 0 0 50% 50%;
+    }
+    &:hover{
+        background-color: $sky-blue;
+        color: white;
+    }
+    &:hover::before{
+        height: 180%;
+    }
 }

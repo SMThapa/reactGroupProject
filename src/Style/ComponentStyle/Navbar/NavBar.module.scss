@@ -2,12 +2,12 @@ $sky-blue :#2550de;
 $dark-blue :#1e3372;
 
 .navBar{
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     display: flex;
+    transform: translate(0, 28%);
     justify-content: center;
-    background-color: #1e3372;
-    color: white;
+    background-color: transparent;    
     padding: 0 3rem;
     position: fixed;
     top: 0;
@@ -15,22 +15,30 @@ $dark-blue :#1e3372;
     box-sizing: border-box;
     
     & .navItems{
+        padding: 0 3rem;
+        background-color: $dark-blue;
+        color: white;
+        border: 1px solid $dark-blue;
+        border-radius: 18px;
         height: 100%;
-        width: 1440px;
+        max-width: 1200px;
+        width: 100%;
         display: grid;
         align-items: center;
         justify-content: space-between;
-        grid-template-columns: 20% 30% 20%;
+        grid-template-columns: 20% 35% 20%;
 
         & .menu {
             overflow: hidden;
             z-index: 10;
 
-            .menu-items{
-                display: flex;
-                justify-content: space-around;
+            .menuItems{
+                & .navMenu{
+                    display: flex;
+                    justify-content: space-around;
+                }
                 
-                & .hidden-register{
+                & .hiddenRegister{
                     display: none;                        
                 }
             }
@@ -42,22 +50,24 @@ $dark-blue :#1e3372;
             font-size: 14px;
             a{
                 margin: 0 8px;
-                padding: 1px 0;
+                padding: 4px 12px;
+                border: 1px solid transparent;
+                color: $dark-blue;
+                background-color: white;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 12px;
             }
         }
 
-        & .hamburger-button{
+        & .hamburgerButton{
             display: none;    
         }
     }
 }
 
-.active{
-    border-bottom: 2px solid white;
-}
-
 /* hamburger */
-.hamburger-button{
+.hamburgerButton{
     display: none;
     height: 60px;
     display: inline-block;
@@ -68,7 +78,7 @@ $dark-blue :#1e3372;
     z-index: 100;
     cursor: pointer;
     
-    & .menu-button {
+    & .menuButton {
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -115,11 +125,12 @@ $dark-blue :#1e3372;
     }
 }
 
-
-
 @media screen and (max-width:1200px){
     .navBar{ 
+        transform: translate(0, 0);
+        background-color: $dark-blue;  
         & .navItems{
+            padding: 0 0;
             grid-template-columns: 20% 20%;
             & .menu{
                 position: absolute;
@@ -127,29 +138,30 @@ $dark-blue :#1e3372;
                 top: 0;
                 left: 0;
                 background: $dark-blue;
-                
                 width: 100vw;   
                 clip-path: circle(50px at 80% -5%);
-                -webkit-clip-path: circle(30px at 93% 3%);
+                -webkit-clip-path: circle(0px at 85% 3%);
                 transition: all .7s ease;
                 pointer-events: none;
 
-                & .menu-items{
-                    height: 100%;
-                    display: flex;
-                    justify-content: initial;
-                    // align-items: center;
-                    margin-top: 120px;
-                    margin-left: 120px;
-                    flex-direction: column;  
-                    transition: all 1s ease;
+                & .menuItems{
+                    & .navMenu{
+                        height: 100%;
+                        display: flex;
+                        justify-content: initial;
+                        // align-items: center;
+                        margin-top: 120px;
+                        margin-left: 120px;
+                        flex-direction: column;  
+                        transition: all 1s ease;
+                    }
 
-                    & .hidden-register{
+                    & .hiddenRegister{
                         display: initial;
                         position: absolute;
                         right: 10%;
                         bottom: 5%;
-                        & .hidden-register-items{
+                        & .hiddenRegisterItems{
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -170,9 +182,9 @@ $dark-blue :#1e3372;
                     }
                 }
             }
-            & .open-menu{
+            & .openMenu{
                 background-color: $sky-blue;
-                left: 0;
+                // left: 0;
                 clip-path: circle(1550px at 90% -10%);
                 -webkit-clip-path: circle(1550px at 90% -10%);
                 pointer-events: all;
@@ -180,7 +192,7 @@ $dark-blue :#1e3372;
             & .register{
                 display: none;
             }                
-            & .hamburger-button{
+            & .hamburgerButton{
                 display: initial;
                 display: flex;
                 justify-content: flex-end;
@@ -193,16 +205,18 @@ $dark-blue :#1e3372;
     .navBar{
         padding: 0 1rem;
 
-        & .navItems .open-menu{
+        & .navItems .openMenu{
             background-color: black;
             left: 0;
             clip-path: circle(1100px at 90% -10%);
             -webkit-clip-path: circle(1100px at 90% -10%);
             pointer-events: all;
 
-            & .menu-items{
-                margin-left: 40px;
-                transition: all 1s ease;
+            & .menuItems{
+                & .navMenu{
+                    margin-left: 40px;
+                    transition: all 1s ease;
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-import "../Style/hero.css";
+import "../Style/ComponentStyle/Hero/hero.css";
 
 export const Hero = () => {
   

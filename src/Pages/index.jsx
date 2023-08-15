@@ -5,3 +5,4 @@ export {About} from "./About";
 export {SinglePage} from "./SinglePage"
 export {LoginPage} from './LoginPage';
 export {RegisterPage} from './RegisterPage';
+export {CaseStudy} from './CaseStudy';

@@ -2,7 +2,7 @@ import { useTitle } from "../Hooks/useTitle"
 
 export const About = () => {
 
-  useTitle('About Page')
+  useTitle('About - CodTree')
 
   return (
     <div className="theContainer">About</div>
