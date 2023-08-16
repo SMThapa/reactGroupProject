@@ -24,7 +24,7 @@ export const About = () => {
             <img src="https://media0.giphy.com/media/3xz2Bw12fe9iyG06v6/giphy.gif?cid=ecf05e4708aca6u2vei5z47ufuk0mdh2wqvf3fyg138s1jx5&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" />
           </div>
           <div className="lg:w-1/2 w-2/3 ml-8">
-            <h1 className="lg:text-7xl mb-6 font-semibold"># What We Do?</h1>
+            <h1 className="lg:text-7xl sm:text-5xl mb-6 font-semibold"># What We Do?</h1>
             <div className="leading-10">
               <p className="xl:text-xl">We mainly focus on providing 3 basic services-</p>
               <li className="xl:text-xl">Web designing and development</li>
@@ -35,7 +35,7 @@ export const About = () => {
         </div>
 
         <div className="mb-40">
-          <h1 className="text-7xl mb-6 font-semibold">#Why Us??</h1>
+          <h1 className="lg:text-7xl sm:text-5xl mb-6 font-semibold">#Why Us??</h1>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="h-auto max-w-full">
               <h1 className="text-3xl font-semibold">Unique design</h1>
@@ -64,9 +64,9 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-flow-col gap-12 items-center mb-40">
-          <div className="col-span-2">
-            <h1 className="text-7xl mb-6 font-semibold">#OUR PHILOSOPY</h1>
+        <div className="flex items-center mb-40">
+          <div className="lg:w-2/3">
+            <h1 className="lg:text-7xl sm:text-5xl mb-6 font-semibold">#OUR PHILOSOPY</h1>
             <p className="text-lg">
               &emsp;&emsp;We at COD Tress always aim to do the best in whatever we create, design and produce. Our top priority is consumer 
               satisfaction, giving them the boost to make their business a huge success. We ensure the customer satisfaction by offering 
@@ -79,13 +79,13 @@ export const About = () => {
               doing our best in understanding our clients and their needs, using our ability and expertise to reach their desired goals.
             </p>
           </div>
-          <div className="col-span-1">
-            <img className="" src="https://media3.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif?cid=ecf05e47vkrgkt4q1i3axg1g3ox1inq3u7zsph1980oyd0x2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" />
+          <div className="lg:w-1/3">
+            <img className="h-full w-full lg:pl-8" src="https://media3.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif?cid=ecf05e47vkrgkt4q1i3axg1g3ox1inq3u7zsph1980oyd0x2&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="" />
           </div>
         </div>
 
         <div className="">
-          <h1 className="text-7xl mb-6 font-semibold mb-20">#Our Team Members</h1>            
+          <h1 className="lg:text-7xl sm:text-5xl mb-6 font-semibold mb-20">#Our Team Members</h1>            
           <div>
             <TeamCard/>
           </div>
