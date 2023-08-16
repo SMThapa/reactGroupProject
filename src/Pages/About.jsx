@@ -86,7 +86,7 @@ export const About = () => {
 
         <div className="">
           <h1 className="lg:text-7xl sm:text-5xl text-4xl mb-6 font-semibold mb-20">#Our Team Members</h1>            
-          <div>
+          <div className="flex justify-center">
             <TeamCard/>
           </div>
         </div>
