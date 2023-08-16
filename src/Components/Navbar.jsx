@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom"
 import navStyle from '../Style/ComponentStyle/Navbar/NavBar.module.scss';
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
 
@@ -9,10 +10,26 @@ export const Navbar = () => {
     setOpen(!openMenu)
   }
 
+  const [currentPosition, setCurrentPositon] = useState(0)
+  const [previousPosition, setPreviousPosition] = useState(0)
+  const [hidenav, setHideNav] = useState(false)
+
+  window.addEventListener('scroll', ()=>{
+    setCurrentPositon(window.pageYOffset)
+    if(currentPosition > previousPosition){
+      setPreviousPosition(currentPosition)
+      setHideNav(true)
+    }else{
+      setHideNav(false)
+    }
+
+    // console.log(currentPosition, previousPosition)
+  })
+
   const navigate = useNavigate()
 
   return (
-    <div className={navStyle.navBar}>
+    <motion.div className={`${navStyle.navBar}`} >
       <div className={navStyle.navItems}>
         <p onClick={()=> navigate('/')} style={{zIndex:"100", cursor:"pointer"}}> CodTrees</p>
         <div className= {`${navStyle.menu} ${openMenu ? navStyle.openMenu : navStyle}`}>
@@ -49,6 +66,6 @@ export const Navbar = () => {
         </div>
       </div>
       <div className={`${navStyle.background} ${openMenu? navStyle.opened: ''}`}></div>
-    </div>
+    </motion.div>
   )
 }

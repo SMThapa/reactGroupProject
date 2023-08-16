@@ -24,7 +24,7 @@ export const Projects = () => {
       <div className=''>
         <div className='w-3/4 lg:mb-20 mb-10'>
           <motion.h1 
-            initial={{y:100, opacity:0}}
+            initial={{y:20, opacity:0}}
             animate={{y:0, opacity:1}}
             className="lg:text-6xl md:text-5xl text-2xl font-semibold text-gray-700 lg:pl-10" >Discover the Projects that We Are Proud Of.
           </motion.h1>

@@ -1,0 +1,13 @@
+.bg-facebook {
+  background-color: rgba(115, 115, 126, 0.8156862745);
+}
+.bg-facebook:hover {
+  background-color: rgba(103, 103, 113, 0.8156862745);
+}
+
+.bg-twitter {
+  background-color: #181a1b;
+}
+.bg-twitter:hover {
+  background-color: #0c0d0e;
+}/*# sourceMappingURL=footer.css.map */
